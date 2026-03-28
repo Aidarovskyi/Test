@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=name, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  EEEEE55555
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product-card</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page-layout">
+      <button id="change-color-all-card-button">
+        изменить цвет всех карточек.
+      </button>
+      <button id="change-color-first-card-button">
+        изменить цвет первой карточки
+      </button>
+      <button id="open-google">Открыть страницу Google.com</button>
+      <button id="color-toggle-button">Нажми меня, чтобы сменить цвет</button>
+      <button id="main-title-button">Вывести в консоль</button>
+      <div class="header-container">
+        <h1 class="main-title">Выбери свой продукт</h1>
+      </div>
+      <div class="cards-container-box" id="product-list">
+        <template id="product-template">
+          <div class="card-container">
+            <img class="product-img" width="290" height="245" />
+            <span class="product-category"></span>
+            <h3 class="product-name"></h3>
+            <p class="product-description"></p>
+            <span class="composition-title">Состав:</span>
+            <ul class="product-composition-list"></ul>
+            <div class="product-price-container">
+              <span class="price-label">Цена</span>
+              <span class="product-price price-value"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+     <script src="script.js"></script>
+    <script src="homework-5.js"></script>
+    <script src="homework-6.js"></script>
+    <script src="homework-7.js" type="module"></script>
+    <script src="products.js"></script>
+    <script src="homework-8.js" type="module"></script>
+  </body>
 </html>
